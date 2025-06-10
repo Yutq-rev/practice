@@ -21,6 +21,8 @@ keep
 
 周波数応答解析
 
+
+
 不明なSUBROUTIN
 
 
@@ -28,11 +30,12 @@ system_clock(time_begin_c,CountPerSec,CountMax)
 
 CHECKER(CYCLENO) TRAP 
 SUBENERGY(FORCE,FGRID,FNN,MODEVECTOR,LOAD,ALFA,BETA,OMEGA1,COMPLIANCE,MODE,LAMDA,L,SEIBUN,FNUM) 
-ga_haichi
+
 	
 感度計算 
 MKSPRDAT1
 SUBPRESS
+
 
 目的関数の計算
 altairで解析計算を行っている
@@ -43,3 +46,14 @@ MASSCONTROL
 
 
 
+GAの計算
+ga_haichi
+最適解を探してdampIDとdnに保存
+SUBROUTINE
+initialize_population(GENE, population_size, dnN)
+ランダムな数字を用いて初期のダンパ配置を決める→1ならある,0ならない
+
+GENE(a,b)a行b列の数列的なやつ
+
+fitness_caliculate
+fitness1の条件を変えれば,ダンパ個数を最小化可能?
