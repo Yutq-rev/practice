@@ -10,3 +10,22 @@
 program の概要
 変数を更新しながら運動エネルギー（Kinetic_Energy(IP-1)・・・）
 の変化率が0.001以下になるまでループを回す
+
+ダンパは位置を計算して各回ごとに記録
+
+不明なSUBROUTIN
+system_clock(time_begin_c,CountPerSec,CountMax)
+
+CHECKER(CYCLENO) TRAP 
+SUBENERGY(FORCE,FGRID,FNN,MODEVECTOR,LOAD,ALFA,BETA,OMEGA1,COMPLIANCE,MODE,LAMDA,L,SEIBUN,FNUM) 
+ga_haichi
+	
+感度計算 
+MKSPRDAT1
+SUBPRESS
+
+目的関数の計算
+altairで解析計算を行っている
+MSKUMI
+HENKEI(GGR)
+
