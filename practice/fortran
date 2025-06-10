@@ -13,7 +13,17 @@ program の概要
 
 ダンパは位置を計算して各回ごとに記録
 
+keep
+→試行回数IPが5の倍数のときにfilenameにIPを書く
+その後filenameにenban6のデータを書き込む
+
+目的関数が収束したときにIPが5の倍数でなければそのモデルに対してダンパ配置を最適化する
+
+周波数応答解析
+
 不明なSUBROUTIN
+
+
 system_clock(time_begin_c,CountPerSec,CountMax)
 
 CHECKER(CYCLENO) TRAP 
@@ -28,4 +38,8 @@ SUBPRESS
 altairで解析計算を行っている
 MSKUMI
 HENKEI(GGR)
+
+MASSCONTROL
+
+
 
